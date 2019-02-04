@@ -431,7 +431,7 @@ section{
 
 /*-------------Map Container -------------*/
 .map-area{
-  margin-bottom: 12em;
+  margin-bottom: 5em;
 }
 
 /*--------------- CONTACT DETAILS --------------- */
@@ -477,14 +477,11 @@ section{
     padding-top: 1em;
     padding-bottom: 1.7em;
   }
-  .footer-logo-margin{
-  margin-bottom: 10px !important;
-}
 .footer-card-logo{
-  height: 33px;  
+  height: 25px;  
 }
 .footer-logo-margin{
-  margin-bottom: 17px !important;
+  margin-bottom: 14px !important;
 }
 /*----------------- FOOTER END --------------------*/
 
@@ -586,11 +583,9 @@ font-size: 1.9em
 /*----------------Footer Font ---------------*/
 
 .footer-card-logo{
-  height: 45px;
+  height: 25px;
 }
-.footer-logo-margin{
- margin-bottom: 17px !important;
-}
+
 
 /*----------------Footer Font End ---------------*/
 
