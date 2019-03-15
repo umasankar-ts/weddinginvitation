@@ -33,8 +33,31 @@
 			})
 		})
 	</script>
+	<script>
+		document.onkeydown = function(e) {
+	        if (e.ctrlKey && 
+	            (e.keyCode === 67 || 
+	             e.keyCode === 86 || 
+	             e.keyCode === 85 || 
+	             e.keyCode === 117)) {
+	            return false;
+	        } else {
+	            return true;
+	        }
+		};
+		$(document).keypress("u",function(e) {
+			if(e.ctrlKey)
+			{
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+		});
+	</script>
 </head>
-    <body>    
+    <body oncontextmenu="return false">    
 		<div class="container-fluid">
 			<div id="loader_image" class="row justify-content-center">
 				<div class="col-lg-12 loader-container" align="center">
@@ -328,16 +351,13 @@
 					</div>
 					<!-- Map container ends -->
 
-					<!-- Footer -->		
-					<div class="justify-content-center footer-container-padding">
-						<div align="center">
-		    				<img src="images/footer-image.jpg" class="img-fluid">
-		    			</div>
+					<!-- Footer -->					
+					<div class="footer-bg-image justify-content-center footer-container-padding">
 						<div class="row justify-content-center">
 							<div class="footer-padding ">
 								<div class="card card-radius banner-map-card-shadow card-opacity">
 					    			<div align="center" class="padding-left-right">
-					    				<img class="img-fluid footer-card-logo footer-logo-margin" src="images/footer-logo.png"><span class="footer-rasigan-font font-bold small-heading-shadow"> Rasigan</span> <span class="small-heading-shadow footer-contact-font-size" style="font-weight: bolder;">&nbsp;Fashion Designer</span>
+					    				<img class="img-fluid footer-card-logo footer-logo-margin" src="images/footer-logo.png"><span class="footer-rasigan-font font-bold small-heading-shadow"> Rasigan</span> <span class="small-heading-shadow footer-contact-font-size" style="font-weight: bolder;">&nbsp;Fashion Designer and Advisor</span>
 					    			</div>
 				    			</div>		    			
 							</div>
@@ -367,7 +387,7 @@
 			    				</div>
 		    				</div>
 		    			</div>
-					</div>			
+					</div>
 					<!-- Footer ends-->
 
 					<!-- Balloon Animation -->
@@ -381,4 +401,4 @@
 			</div>		
 		</div>		
     </body>    
-</html> 
+</html>
